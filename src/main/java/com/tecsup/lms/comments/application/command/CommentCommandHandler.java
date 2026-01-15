@@ -3,7 +3,9 @@ package com.tecsup.lms.comments.application.command;
 import com.tecsup.lms.comments.domain.model.CourseComment;
 import com.tecsup.lms.comments.domain.event.*;
 import com.tecsup.lms.shared.infrastructure.eventsourcing.EventStore;
+import org.springframework.stereotype.Component;
 
+@Component
 public class CommentCommandHandler {
     private final EventStore eventStore;
 
